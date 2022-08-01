@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: 'Ibarra Real Nova', serif;
+  }
+  
+.container {
+    width: 30rem;
+    margin-left: 5rem;
+    height: 80rem;
+    text-align: center;
+}
+
+.inputunseen{
+    display:none;
+}
+
+.item{
+    display:flex;
+    background-color: #e6e2d3;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content{
+  border:1px solid;
+  width:20%;
+  border-radius:2rem;
+  text-align: center;
+  border-color:#e6e2d3 ;
+  
+  
+}
+
+
+.item-uncompleted.h1{
+  color:red
+}
