@@ -8,6 +8,8 @@
 
 :root{
   --color-background: #e6e2d3;
+  --color-btn:#008cba;
+  --color-btn-del:#c94c4c;
 }
 
 html {
@@ -62,7 +64,7 @@ html {
   margin-left: 2rem;
   border-radius: 1rem;
   border: none;
-  background-color: #008cba;
+  background-color: var(--color-btn);
   font-weight: bold;
   color: aliceblue;
 }
@@ -73,7 +75,7 @@ html {
 
 .item{
     display:flex;
-    background-color: #e6e2d3;
+    background-color: var(--color-background);
     margin-top: 1rem;
     border-radius: 1rem;
     justify-content: space-between;
@@ -85,11 +87,24 @@ html {
   width: 80%;  
 
 }
+.item h1:hover{
+  cursor: pointer;
+}
+
+.font-lineThrough{
+  text-decoration: line-through;
+}
+
 .btn-group{
   width: 20%;
   display:flex;
   margin: 1.5rem;
 }
+
+.btn-alone{
+  width: 11%;
+}
+
 .btn{
   width: 8rem;
   height: 4rem;
@@ -105,14 +120,14 @@ html {
 
 .btn-delItem{
   margin-left: 0.5rem;
-  background-color: #c94c4c;
+  background-color: var(--color-btn-del);
 }
 .btn-editItem{
-  background-color: #008cba;
+  background-color: var(--color-btn);
 }
 
 svg{
-  color:#008cba;
+  fill:antiquewhite
 }
 
 
@@ -126,3 +141,6 @@ svg{
   
 }
 
+.content-item2{
+   margin-top: 6rem;
+}
